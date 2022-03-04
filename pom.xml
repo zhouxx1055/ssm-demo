@@ -43,15 +43,15 @@
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <jcl-over-slf4j.version>1.7.25</jcl-over-slf4j.version>
 
-<!--        &lt;!&ndash; web组件依赖和jsp组件依赖 &ndash;&gt;-->
-<!--        &lt;!&ndash; jstl-api &ndash;&gt;-->
-<!--        <jstl-api.version>1.2</jstl-api.version>-->
-<!--        &lt;!&ndash; servlet-api &ndash;&gt;-->
-<!--        <servlet-api.version>2.5</servlet-api.version>-->
-<!--        &lt;!&ndash; javaee-api &ndash;&gt;-->
-<!--        <javaee-api.version>7.0</javaee-api.version>-->
-<!--        &lt;!&ndash; taglibs &ndash;&gt;-->
-<!--        <taglibs.version>1.1.2</taglibs.version>-->
+        <!-- web组件依赖和jsp组件依赖 -->
+        <!-- jstl-api -->
+        <jstl-api.version>1.2</jstl-api.version>
+        <!-- servlet-api -->
+        <servlet-api.version>2.5</servlet-api.version>
+        <!-- javaee-api -->
+        <javaee-api.version>7.0</javaee-api.version>
+        <!-- taglibs -->
+        <taglibs.version>1.1.2</taglibs.version>
 
         <!-- JSON序列化-->
         <!-- jackson -->
@@ -185,30 +185,30 @@
             <version>${jcl-over-slf4j.version}</version>
         </dependency>
 
-<!--        &lt;!&ndash; web组件及jsp组件 &ndash;&gt;-->
-<!--        &lt;!&ndash; jsp相关jar包 start &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>javax.servlet.jsp.jstl</groupId>-->
-<!--            <artifactId>jstl-api</artifactId>-->
-<!--            <version>${jstl-api.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>javax.servlet</groupId>-->
-<!--            <artifactId>servlet-api</artifactId>-->
-<!--            <version>${servlet-api.version}</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>javax</groupId>-->
-<!--            <artifactId>javaee-api</artifactId>-->
-<!--            <version>${javaee-api.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>taglibs</groupId>-->
-<!--            <artifactId>standard</artifactId>-->
-<!--            <version>${taglibs.version}</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; jsp相关jar包 end &ndash;&gt;-->
+        <!-- web组件及jsp组件 -->
+        <!-- jsp相关jar包 start -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>${jstl-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>${taglibs.version}</version>
+        </dependency>
+        <!-- jsp相关jar包 end -->
 
         <!-- JSON格式化 -->
         <!-- jackson相关jar包 start -->
@@ -279,6 +279,32 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
         </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>

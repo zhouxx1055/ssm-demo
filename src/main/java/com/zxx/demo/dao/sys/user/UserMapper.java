@@ -15,7 +15,7 @@ public interface UserMapper {
 
     long insertUser(UserDto userDto);
 
-    void insertBatchUser(@Param("users") List<UserDto> users);
+    int insertBatchUser(@Param("list") List<UserDto> users);
 
     int deleteUserById(UserDto userDto);
 

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="ssm-demo">
-    <output-path>$PROJECT_DIR$/out/artifacts/ssm_demo</output-path>
+  <artifact type="exploded-war" name="ssm_demo">
+    <output-path>$PROJECT_DIR$/out/ssm_demo</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="ssm-demo/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -44,6 +44,10 @@
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.7.1" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.58" />
         </element>
       </element>
     </root>

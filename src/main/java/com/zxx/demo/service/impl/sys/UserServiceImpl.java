@@ -10,7 +10,6 @@ import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
 
 /**
  * @author zhouxx
@@ -41,10 +40,10 @@ public class UserServiceImpl implements UserService {
             throw exception;
         }
 
-        //对密码进行 md5 加密
-        String md5Password = DigestUtils.md5DigestAsHex(userBo.getUserPwd().getBytes());
+//        //对密码进行 md5 加密
+//        String md5Password = DigestUtils.md5DigestAsHex(userBo.getUserPwd().getBytes());
 
-        if(userDto.getUserPwd()!=md5Password){
+        if(!userDto.getUserPwd().equals(userBo.getUserPwd())){
             return new BaseResult(BaseResultError.API_LOGIN_Fail);
         }
 

@@ -4,6 +4,8 @@ import com.zxx.demo.util.BaseResultError;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /**
  * @author zhouxx
  * @Description:
@@ -11,7 +13,7 @@ import lombok.ToString;
  */
 @Data
 @ToString
-public class BaseResult {
+public class BaseResult implements Serializable {
     private int status;
     private Object data;
     private String msg;

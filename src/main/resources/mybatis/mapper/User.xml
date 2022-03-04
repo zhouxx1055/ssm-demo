@@ -31,10 +31,10 @@
     </insert>
 
     <!-- 多条插入 -->  <!--  void insertBatchUser(@Param("users") List<User> users); -->
-    <insert id="insertBatchUser" useGeneratedKeys="true" keyProperty="id" parameterType="java.util.List">
+    <insert id="insertBatchUser"  parameterType="com.zxx.demo.module.dto.UserDto">
         insert into sys_user(user_name, user_phone, user_email, user_pwd, user_sex)
         values
-        <foreach collection="users" item="user" separator=",">
+        <foreach collection="list" item="user" separator=",">
             ( #{user.userName}, #{user.userPhone}, #{user.userEmail}, #{user.userPwd}, #{user.userSex})
         </foreach>
     </insert>

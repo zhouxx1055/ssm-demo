@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.ToString;
 import org.codehaus.jackson.annotate.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * @author zhouxx
  * @Description:
@@ -11,7 +13,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
  */
 @Data
 @ToString
-public class LoginUserVo {
+public class LoginUserVo implements Serializable {
 
     /**
      * 用户名
